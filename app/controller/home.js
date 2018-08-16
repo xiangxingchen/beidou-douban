@@ -11,6 +11,9 @@ module.exports = (app) => {
       // render view template in `client/`
       await this.ctx.render('about', { contacts });
     }
+    async user() {
+      await this.ctx.render('user', { contacts: ['tom', 'alan'] });
+    }
   }
 
   return HomeController;

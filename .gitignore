@@ -2,3 +2,5 @@ node_modules
 run
 logs
 .ismorphic
+data
+.vscode
