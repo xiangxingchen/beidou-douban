@@ -237,3 +237,194 @@
   }
 }
 
+#four{
+  @primary: #FAF3DD;
+@secondary: #68B0AB;
+@accent: #8FC0A9;
+
+@height: 30px;
+@width: 100px;
+@animation-delay: 0.15;
+@animation: 2s;
+@size: 20px;
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  h1,h2,h3,h4,h5,h6,a,p,span{
+    padding-bottom: 0.714em !important;
+    padding-top: 0.714em !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    color: @accent;
+  }
+}
+
+
+
+  body{
+    background: @primary;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+  }
+
+
+  .main{
+    width: 150px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 15px;
+    perspective: 2560px;
+  }
+
+  .helix > div {
+    width: @width;
+    height: @height;
+    margin: auto;
+    position: relative;
+    animation: revolve @animation reverse linear infinite;
+    transform-style: preserve-3d;
+    transform-origin: center center 0;
+    &:after, &:before {
+      content: '';
+      height: @size;
+      width: @size;
+      border-radius: 100%;
+      background: red;
+      position: absolute;
+      animation: revolve @animation linear infinite;
+    }
+    &:before {
+      left: 0;
+      background: @secondary;
+    }
+    &:after {
+      right: 0;
+      background: @accent;
+    }
+
+    //>div{
+    //  width: @width;
+    //  height: @height;
+    //  &:before {
+    //    content: '';
+    //    height: 2px;
+    //    width: @width;
+    //    border-radius: 100%;
+    //    background: red;
+    //    position: absolute;
+    //    border: 1px dashed red;
+    //    animation: revolve @animation linear infinite;
+    //  }
+    //}
+    &:nth-child(2){
+      animation-delay: @animation-delay*2s;
+      &:before,&:after{
+        animation-delay: @animation-delay*2s;
+      }
+    }
+    &:nth-child(3){
+      animation-delay: @animation-delay*3s;
+      &:before,&:after{
+        animation-delay: @animation-delay*3s;
+      }
+    }
+    &:nth-child(4){
+      animation-delay: @animation-delay*4s;
+      &:before,&:after{
+        animation-delay: @animation-delay*4s;
+      }
+    }
+    &:nth-child(5){
+      animation-delay: @animation-delay*5s;
+      &:before,&:after{
+        animation-delay: @animation-delay*5s;
+      }
+    }
+    &:nth-child(6){
+      animation-delay: @animation-delay*6s;
+      &:before,&:after{
+        animation-delay: @animation-delay*6s;
+      }
+    }
+    &:nth-child(7){
+      animation-delay: @animation-delay*7s;
+      &:before,&:after{
+        animation-delay: @animation-delay*7s;
+      }
+    }
+    &:nth-child(8){
+      animation-delay: @animation-delay*8s;
+      &:before,&:after{
+        animation-delay: @animation-delay*8s;
+      }
+    }
+    &:nth-child(9){
+      animation-delay: @animation-delay*9s;
+      &:before,&:after{
+        animation-delay: @animation-delay*9s;
+      }
+    }
+    &:nth-child(10){
+      animation-delay: @animation-delay*10s;
+      &:before,&:after{
+        animation-delay: @animation-delay*10s;
+      }
+    }
+    &:nth-child(11){
+      animation-delay: @animation-delay*11s;
+      &:before,&:after{
+        animation-delay: @animation-delay*11s;
+      }
+    }
+    &:nth-child(12){
+      animation-delay: @animation-delay*12s;
+      &:before,&:after{
+        animation-delay: @animation-delay*12s;
+      }
+    }
+    &:nth-child(13){
+      animation-delay: @animation-delay*13s;
+      &:before,&:after{
+        animation-delay: @animation-delay*13s;
+      }
+    }
+    &:nth-child(14){
+      animation-delay: @animation-delay*14s;
+      &:before,&:after{
+        animation-delay: @animation-delay*14s;
+      }
+    }
+    &:nth-child(15){
+      animation-delay: @animation-delay*15s;
+      &:before,&:after{
+        animation-delay: @animation-delay*15s;
+      }
+    }
+
+    @keyframes revolve {
+      from {
+        transform: rotateY(360deg)
+      }
+      to {
+        transform: rotateY(0)
+      }
+    }
+    @keyframes revolveLine {
+      from {
+        transform: rotateY(360deg);
+        width: @width;
+      }
+      to {
+        transform: rotateY(0);
+        width: 0;
+      }
+    }
+  }
+}
+
+
