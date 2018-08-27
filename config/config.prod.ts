@@ -1,4 +1,4 @@
-import * as path from 'path'
+import * as path from 'path';
 
 module.exports = appInfo => {
    return {
@@ -7,6 +7,6 @@ module.exports = appInfo => {
            dir: path.join(appInfo.baseDir, 'app/public'),
            dynamic: false,
            preload: true,
-       }
-   }
+       },
+   };
 };

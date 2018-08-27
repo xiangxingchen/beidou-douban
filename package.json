@@ -1,7 +1,7 @@
 {
-  "name": "apollo-mobile-wap",
+  "name": "beidou-douban",
   "version": "1.0.8",
-  "description": "官网触屏",
+  "description": "beidou-douban",
   "egg": {
     "typescript": true
   },
