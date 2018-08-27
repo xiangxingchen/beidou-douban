@@ -1,24 +1,4 @@
 {
-  "client\\components\\loader\\index.module.less": {
-    "loader": "loader_1chHh",
-    "fullScreen": "fullScreen_3KCfq",
-    "warpper": "warpper_34Z8k",
-    "inner": "inner_2-nmZ",
-    "spinner": "spinner_k58cd",
-    "text": "text_3tyFh",
-    "hidden": "hidden_12GzJ"
-  },
-  "client\\components\\page\\index.module.less": {
-    "text-overflow": "text-overflow_1ArK3",
-    "contentInner": "contentInner_18_3_"
-  },
-  "client\\layout\\index.module.less": {
-    "text-overflow": "text-overflow_1F3hH",
-    "layout": "layout_2sZdb",
-    "main": "main_2A2K1",
-    "container": "container_1PJoT",
-    "content": "content_3wWFf",
-    "fold": "fold_1z4dt",
-    "bread": "bread_3yvdd"
-  }
+  "client\\pages\\list\\index.less": {},
+  "client\\theme\\index.less": {}
 }

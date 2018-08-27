@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "../build/dist",
+    "module": "commonjs",
+    "target": "es6",
+    "lib": ["es6", "dom"],
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "paths": {
+      "client/*": ["./client/*"]
+    },
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["./client/**/*.ts", "./client/**/*.tsx"],
+  "exclude": ["app","config",
+    "../node_modules", "build", "scripts"]
+}

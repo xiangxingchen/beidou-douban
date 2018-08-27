@@ -1,0 +1,38 @@
+{
+  "extends": ["tslint:latest", "tslint-react", "tslint-eslint-rules"],
+  "rules": {
+    "quotemark": [true, "single", "jsx-double"],
+    "interface-name": false,
+    "ordered-imports": false,
+    "no-submodule-imports": false,
+    "no-implicit-dependencies": false,
+    "jsx-boolean-value": false,
+    "jsx-no-multiline-js": false,
+    "object-literal-sort-keys": false,
+    "arrow-parens": false,
+    "array-bracket-spacing": "always",
+    "block-spacing": "always",
+    "object-curly-spacing": "always",
+    "no-console": false,
+    // 维护性功能
+    "indent": [true, "spaces", 2],
+    "max-classes-per-file": [true,1],
+    // TS特性
+    "member-access": true,                    // 设置成员对象的访问权限（public,private,protect)
+    "no-empty-interface":true,                // 不允许空接口
+    "no-any": true,
+    // 功能特性
+    "no-parameter-reassignment":true,         // 不允许修改方法输入参数
+    "no-empty":true,                          // 函数体不允许空
+    "no-switch-case-fall-through":true,       // 不允许case段落中在没有使用breack的情况下，在新启一段case逻辑
+    "no-use-before-declare":true,             // 在使用前必须声明
+    "triple-equals":true,                     // 必须使用恒等号，进行等于比较
+    "no-var-keyword": true,                   // 不允许使用var
+    // 格式
+    "array-type":[true,"array"],             // 建议使用T[]方式声明一个数组对象
+    "class-name":true,                       // 类名以大驼峰格式命名
+    "comment-format": [true, "check-space"],  // 定义注释格式
+    "typedef-whitespace": true               //类型声明的冒号之前是否需要空格
+  },
+  "rulesDirectory": ["app", "client"]
+}
