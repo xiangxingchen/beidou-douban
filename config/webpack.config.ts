@@ -149,12 +149,17 @@ module.exports = (app, defaultConfig, dev) => {
       options: postcssOpts
     };
 
-    defaultConfig.output = {
-        path: path.join(__dirname, '../app/public'),
-        filename: '[name].js',
-        publicPath: '/build/',
-        chunkFilename: '[name].[chunkhash].js'
-    };
+  defaultConfig.module.rules[6].use[3] = {
+    loader: 'postcss-loader',
+    options: postcssOpts
+  };
+
+  defaultConfig.output = {
+    path: path.join(__dirname, '../app/public'),
+    filename: '[name].[chunkhash].js',
+    publicPath: '/public/',
+    chunkFilename: '[name].[chunkhash:8].chunk.js'
+  };
 
     return defaultConfig;
 };

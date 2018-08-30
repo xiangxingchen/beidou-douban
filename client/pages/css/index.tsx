@@ -36,31 +36,10 @@ class Css extends React.Component {
         <div id="three">
           <div className="loader">
             <div className="circle" />
-            {/*<div className="circle" />*/}
-            {/*<div className="circle" />*/}
-            {/*<div className="circle" />*/}
-            {/*<div className="circle" />*/}
-          </div>
-        </div>
-        <div id="four">
-          <div className="helix">
-            <div>
-              <div />
-            </div>
-            <div />
-            <div />
-            <div />
-            <div />
-            <div />
-            <div />
-            <div />
-            <div />
-            <div />
-            <div />
-            <div />
-            <div />
-            <div />
-            <div />
+            <div className="circle" />
+            <div className="circle" />
+            <div className="circle" />
+            <div className="circle" />
           </div>
         </div>
       </div>

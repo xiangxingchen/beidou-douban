@@ -12,7 +12,9 @@
     "dev": "beidou dev --port 8888",
     "build:server": "ets && tsc -p tsconfig-server.json",
     "build:client": "beidou build",
-    "build": "npm run build:client && npm run build:server"
+    "build": "npm run build:client && npm run build:server",
+    "server:start": "egg-scripts start --daemon",
+    "server:stop": "egg-scripts stop"
   },
   "license": "MIT",
   "dependencies": {
@@ -39,6 +41,7 @@
     "beidou-cli": "^1.0.8",
     "beidou-core": "^1.0.8",
     "egg": "^2.10.0",
+    "egg-scripts": "^2.9.1",
     "egg-ts-helper": "^1.9.2",
     "js-cookie": "^2.2.0",
     "lodash": "^4.17.10",
